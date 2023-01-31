@@ -1,0 +1,285 @@
+/**************************/
+/* BELOW 1344px (smaller desktops) */
+/**************************/
+@media (max-width:84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .feature-grid {
+    gap: 6.4rem;
+  }
+
+  .video {
+    flex-direction: column;
+  }
+
+  .video-thumbnail {
+    width: 100%;
+  }
+
+  .video-btn:link,
+  .video-btn:visited {
+    font-size: 2rem;
+  }
+
+  .video-img-box {
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .video-slide {
+    width: 100%;
+  }
+
+  .video-icons {
+    justify-content: center;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (landscape Tablets) */
+/**************************/
+
+@media (max-width:75em) {
+
+  /* html size to 9px */
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 4.8rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .head-primary {
+    font-size: 6rem;
+  }
+
+  .head-secondary {
+    font-size: 3.2rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+    justify-items: center;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .marketing-box {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-img {
+    display: none;
+  }
+
+  .marketig-text-box {}
+
+  .marketing-icons {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  /* mobile nav bar */
+  header {
+    position: relative;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+
+
+  .nav-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 4.4rem;
+
+    transition: all 0.5s ease-in;
+
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .container {
+    padding: 0 8rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-img {
+    width: 40%;
+  }
+
+  .how-head {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .head-secondary {
+    text-align: center;
+  }
+
+  .how-btn:link,
+  .how-btn:visited {
+    margin: 0 auto;
+  }
+
+  .feature-img {
+    height: 60%;
+  }
+
+  .how-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .card-icon {
+    margin: 0 auto;
+  }
+
+  .how-card-text {
+    font-size: 1.6rem;
+  }
+
+  .card-icon {
+    align-items: center;
+  }
+
+  .how-describtion {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .feature-side {
+    width: 100%;
+  }
+
+  .download-section div.container,
+  .grid--3--col {
+    grid-template-columns: 1fr;
+  }
+
+  .feedback-box {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsers-box {
+    justify-content: space-between;
+  }
+
+  .footer--info {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .footer-downloads {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  .logo-col,
+  .header-logo,
+  .addres-col {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-nav {
+    align-items: center;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+
+  .container {
+    padding: 0 6.4rem;
+  }
+
+  .hero-sign {
+    width: 100%;
+  }
+
+  .contacts p {
+    display: flex;
+    flex-direction: row;
+  }
+
+  a.sponser-icon:last-child {
+    margin: 0 auto;
+  }
+
+  .feedback-box {
+    padding: 2.4rem;
+    align-items: center;
+  }
+
+  .feedback-text,
+  .job {
+    text-align: center;
+  }
+
+  .feedback-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
